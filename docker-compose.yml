@@ -1,0 +1,9 @@
+services:
+  landing:
+    image: ghcr.io/koj10/landing:1.0.1
+    container_name: gs_landing
+    restart: unless-stopped
+    ports:
+      - "6200:6200"
+    environment:
+      CONTAINER_PORT: "6200"

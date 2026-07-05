@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности - GameSense</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --purple-dark: #3a2d5d;
+            --purple-medium: #5e4b8b;
+            --purple-light: #7d6ba0;
+            --purple-accent: #9d8ac7;
+            --gray-dark: #2a2a2a;
+            --gray-medium: #4a4a4a;
+            --gray-light: #e0e0e0;
+            --white: #ffffff;
+            
+            --gradient-purple: linear-gradient(135deg, var(--purple-medium), var(--purple-accent));
+            --gradient-gray: linear-gradient(135deg, var(--gray-medium), var(--gray-dark));
+            
+            --font-main: 'Montserrat', sans-serif;
+            --font-heading: 'Orbitron', sans-serif;
+            
+            --shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.2);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--gray-dark);
+            color: var(--white);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .privacy-container {
+            max-width: 900px;
+            margin: 120px auto 0;
+            padding: 2rem;
+        }
+
+        .privacy-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .privacy-header h1 {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            background: var(--gradient-purple);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-header p {
+            color: var(--gray-light);
+            font-size: 1.1rem;
+        }
+
+        .privacy-content {
+            background: var(--gradient-gray);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--purple-medium);
+        }
+
+        .privacy-section {
+            margin-bottom: 2rem;
+        }
+
+        .privacy-section h2 {
+            font-family: var(--font-heading);
+            color: var(--purple-accent);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--purple-medium);
+            padding-bottom: 0.5rem;
+        }
+
+        .privacy-section h3 {
+            color: var(--purple-light);
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .privacy-section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .privacy-section ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-section li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .privacy-section li:before {
+            content: "•";
+            color: var(--purple-accent);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .contact-info {
+            background: rgba(157, 138, 199, 0.1);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-left: 4px solid var(--purple-accent);
+        }
+
+        .contact-info h3 {
+            color: var(--purple-accent);
+            margin-top: 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: var(--gradient-purple);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            margin-top: 2rem;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(135deg, var(--purple-accent), var(--purple-medium));
+        }
+
+        .last-updated {
+            text-align: center;
+            color: var(--gray-light);
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <div class="gallery-grid">
+                <div class="logo-icon">
+                    <img src="../static/images/gallery/logo.jpg">
+                    </div>
+                <span class="logo-text">GameSense</span>
+            </a>
+            
+            <nav class="nav">
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="https://game-sense.ru/price">Тарифы</a></li>
+                    <li><a href="/#gallery">Галерея</a></li>
+                    <li><a href="#tournaments">Турниры</a></li>
+                    <li><a href="/promotions">Акции</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-cta">
+                <a href="https://pc.game-sense.ru/login" class="btn btn-primary">Забронировать</a>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="https://game-sense.ru/price">Тарифы</a></li>
+            <li><a href="/#gallery">Галерея</a></li>
+            <li><a href="#tournaments">Турниры</a></li>
+            <li><a href="/promotions">Акции</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <a href="https://pc.game-sense.ru/login" class="btn btn-primary">Забронировать</a>
+    </div>
+
+    <!-- Privacy Policy Content -->
+    <div class="privacy-container">
+        <div class="privacy-header">
+            <h1>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h1>
+            <p>GameSense PC Club заботится о защите ваших персональных данных</p>
+        </div>
+
+        <div class="privacy-content">
+            <div class="privacy-section">
+                <h2>1. Общие положения</h2>
+                <p>Настоящая Политика конфиденциальности определяет порядок обработки персональных данных пользователей сайта и услуг GameSense PC Club (далее — «Клуб», «мы»).</p>
+                <p>Используя наши услуги, вы соглашаетесь с условиями данной Политики конфиденциальности.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>2. Какие данные мы собираем</h2>
+                <h3>2.1 Персональные данные:</h3>
+                <ul>
+                    <li>Имя и фамилия</li>
+                    <li>Номер телефона</li>
+                    <li>Адрес электронной почты</li>
+                    <li>Дата рождения (для акций)</li>
+                    <li>Данные для бронирования игрового времени</li>
+                </ul>
+
+                <h3>2.2 Технические данные:</h3>
+                <ul>
+                    <li>IP-адрес</li>
+                    <li>Информация о браузере и устройстве</li>
+                    <li>Время посещения и действия на сайте</li>
+                    <li>Файлы cookie</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>3. Цели обработки данных</h2>
+                <p>Мы используем ваши персональные данные для:</p>
+                <ul>
+                    <li>Предоставления услуг игрового клуба</li>
+                    <li>Обработки бронирований и платежей</li>
+                    <li>Связи с вами по вопросам услуг</li>
+                    <li>Проведения акций и рекламных кампаний</li>
+                    <li>Улучшения качества наших услуг</li>
+                    <li>Соблюдения требований законодательства</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>4. Правовые основания обработки</h2>
+                <p>Обработка персональных данных осуществляется на основании:</p>
+                <ul>
+                    <li>Согласия субъекта персональных данных</li>
+                    <li>Исполнения договора на оказание услуг</li>
+                    <li>Соблюдения правовых обязательств</li>
+                    <li>Законных интересов Клуба</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>5. Передача данных третьим лицам</h2>
+                <p>Мы не передаем ваши персональные данные третьим лицам, за исключением случаев:</p>
+                <ul>
+                    <li>Получения вашего явного согласия</li>
+                    <li>Требований законодательства РФ</li>
+                    <li>Обработки платежей через платежные системы</li>
+                    <li>Защиты прав и законных интересов Клуба</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>6. Безопасность данных</h2>
+                <p>Мы принимаем все необходимые технические и организационные меры для защиты ваших персональных данных от:</p>
+                <ul>
+                    <li>Незаконного доступа</li>
+                    <li>Изменения, уничтожения или блокирования</li>
+                    <li>Утечки или несанкционированного распространения</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>7. Сроки хранения данных</h2>
+                <p>Персональные данные хранятся в течение:</p>
+                <ul>
+                    <li>Срока действия договора на оказание услуг</li>
+                    <li>3 лет после окончания договорных отношений</li>
+                    <li>Срока, установленного законодательством РФ</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>8. Ваши права</h2>
+                <p>Вы имеете право:</p>
+                <ul>
+                    <li>Получать информацию об обработке ваших данных</li>
+                    <li>Требовать уточнения, блокирования или уничтожения данных</li>
+                    <li>Отзывать согласие на обработку данных</li>
+                    <li>Обращаться с жалобами в уполномоченные органы</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>9. Файлы Cookie</h2>
+                <p>Наш сайт использует файлы cookie для:</p>
+                <ul>
+                    <li>Улучшения функциональности сайта</li>
+                    <li>Анализа посещаемости</li>
+                    <li>Персонализации контента</li>
+                </ul>
+                <p>Вы можете отключить использование cookie в настройках браузера.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>10. Изменения в Политике</h2>
+                <p>Мы оставляем за собой право вносить изменения в настоящую Политику конфиденциальности. О существенных изменениях мы уведомим вас через сайт или по электронной почте.</p>
+            </div>
+
+            <div class="contact-info">
+                <h3>Контактная информация</h3>
+                <p>По вопросам обработки персональных данных обращайтесь:</p>
+                <ul>
+                    <li><strong>Email:</strong> gamesense.ghost@gmail.com</li>
+                    <li><strong>Телефон:</strong> +7 (909) 097-82-32</li>
+                    <li><strong>Адрес:</strong> г. Магнитогорск, ул. газеты Правда, 59</li>
+                </ul>
+            </div>
+
+            <a href="/" class="back-button">
+                <i class="fas fa-arrow-left"></i> Вернуться на главную
+            </a>
+        </div>
+
+        <div class="last-updated">
+            Последнее обновление: 15 января 2025 года
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-title">GameSense PC Club</h3>
+                    <p>Премиальное гейминг пространство с лучшим оборудованием и атмосферой.</p>
+                    <div class="social-links">
+                        <a href="https://vk.com/gamesensemgn?from=groups" target="_blank"><i class="fab fa-vk"></i></a>
+                        <a href="https://t.me/GameSenseLounge" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Часы работы</h3>
+                    <ul class="footer-list">
+                        <li><i class="far fa-clock"></i>Круглосуточно</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Контакты</h3>
+                    <ul class="footer-list">
+                        <li><i class="fas fa-map-marker-alt"></i> г. Магнитогорск, ул. газеты Правда, 59</li>
+                        <li><i class="fas fa-phone"></i> +7 (909) 097-82-32</li>
+                        <li><i class="fas fa-envelope"></i> gamesense.ghost@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 GameSense PC Club. Все права защищены.</p>
+                <div class="ip-info">
+                    <p><strong>ИП СОРОКИН ВСЕВОЛОД МАКСИМОВИЧ</strong></p>
+                    <p>ИНН: 744610594170 | ОГРНИП: 325745600071018</p>
+                    <p>Расчётный счёт: 40802810572710003589</p>
+                </div>
+                <a href="/privacy" class="footer-link">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>

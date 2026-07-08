@@ -1,0 +1,40 @@
+<header class="landing-header" id="top">
+	<div class="landing-container landing-header__inner">
+		<a href="/" class="landing-brand">
+			<img src="{{ url_for('static', filename='lib/ghonse.svg') }}" alt="GameSense" class="landing-brand__logo">
+			<span class="landing-brand__text">
+				<span class="landing-brand__name">GameSense</span>
+				<span class="landing-brand__sub">COMPUTER CLUB</span>
+			</span>
+		</a>
+		<nav class="landing-nav" aria-label="Основное меню">
+			<a href="/" class="landing-nav__link{% if request.path == '/' %} is-active{% endif %}">Главная</a>
+			<a href="/#pricing" class="landing-nav__link">Тарифы</a>
+			<a href="/#gallery" class="landing-nav__link">Галерея</a>
+			<a href="/promotions" class="landing-nav__link{% if request.path == '/promotions' %} is-active{% endif %}">Акции</a>
+			<a href="/#faq" class="landing-nav__link">FAQ</a>
+			<a href="/#contact" class="landing-nav__link">Контакты</a>
+		</nav>
+		<a href="{{ app_url }}/login" class="landing-btn landing-btn--primary landing-header__cta">Забронировать</a>
+		<button type="button" class="landing-burger" aria-label="Меню" data-mobile-menu-open>
+			<i class="iconoir-menu"></i>
+		</button>
+	</div>
+</header>
+
+<div class="landing-mobile-menu" data-mobile-menu hidden>
+	<div class="landing-mobile-menu__panel">
+		<button type="button" class="landing-mobile-menu__close" aria-label="Закрыть" data-mobile-menu-close>
+			<i class="iconoir-xmark"></i>
+		</button>
+		<nav class="landing-mobile-menu__nav">
+			<a href="/">Главная</a>
+			<a href="/#pricing">Тарифы</a>
+			<a href="/#gallery">Галерея</a>
+			<a href="/promotions">Акции</a>
+			<a href="/#faq">FAQ</a>
+			<a href="/#contact">Контакты</a>
+		</nav>
+		<a href="{{ app_url }}/login" class="landing-btn landing-btn--primary landing-btn--block">Забронировать</a>
+	</div>
+</div>

@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<title>{% block title %}GameSense — компьютерный клуб{% endblock %}</title>
 	<meta name="description" content="{% block description %}Компьютерный клуб GameSense в Магнитогорске: мощные ПК, VIP-зоны, бронь онлайн. ул. Правда, 59. Работаем 24/7.{% endblock %}">
+	<link rel="icon" href="{{ url_for('static', filename='lib/ghonse.svg') }}" type="image/svg+xml">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='lib/ghonse.svg') }}" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="{{ url_for('static', filename='lib/ghonse.svg') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}?v=2.4">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

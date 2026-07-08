@@ -92,7 +92,7 @@
 		<div class="landing-pricing-grid" id="pricingGrid" data-api-url="{{ api_url }}" data-app-url="{{ app_url }}">
 			<p class="landing-pricing-loading">Загрузка тарифов…</p>
 		</div>
-		<p class="landing-pricing-note">Полный прайс и покупка пакетов — в <a href="{{ app_url }}/price">личном кабинете</a>.</p>
+		<p class="landing-pricing-note">Полный прайс и покупка пакетов — в <a href="{{ app_url }}/login">личном кабинете</a>.</p>
 	</div>
 </section>
 
@@ -150,5 +150,5 @@
 </section>
 {% endblock %}
 {% block scripts %}
-<script src="{{ url_for('static', filename='js/pricing.js') }}?v=2.0" defer></script>
+<script src="{{ url_for('static', filename='js/pricing.js') }}?v=2.1" defer></script>
 {% endblock %}

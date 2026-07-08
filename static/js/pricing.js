@@ -8,8 +8,8 @@ function formatPackageLabel(item) {
     if (period === 'бесконечный' && minutes === 60) return '1 час';
     if (period === 'дневной' && minutes === 60) return '1 час (08:00–14:00)';
     if (period === 'дневной' && minutes === 180) return '3 часа (08:00–14:00)';
-    if (period === 'вечерний' && minutes === 180) return '3 часа (17:00–22:00)';
-    if (period === 'вечерний' && minutes === 300) return '5 часов (17:00–22:00)';
+    if (period === 'вечерний' && minutes === 180) return '3 часа (14:00–22:00)';
+    if (period === 'вечерний' && minutes === 300) return '5 часов (14:00–22:00)';
     if (period === 'ночной' && minutes === 600) return 'Ночь 22:00–08:00';
 
     const hours = minutes >= 60 ? Math.round(minutes / 60) : minutes;
@@ -73,7 +73,7 @@ function renderPricing(grid, packages) {
             'standard',
             'STANDARD',
             'Игровой зал',
-            'RTX 3060 Ti · i5-12400F · 280 Hz',
+            'RTX 2060 Super · i5-12400F · 165 Hz',
             weekday,
             weekend,
         ),
@@ -140,7 +140,7 @@ async function loadPricing() {
         grid.innerHTML = `
             <p class="landing-pricing-loading">
                 Не удалось загрузить тарифы.
-                ${appUrl ? `<a href="${appUrl}/price">Смотреть в личном кабинете</a>` : ''}
+                ${appUrl ? `<a href="${appUrl}/login">Войти в личный кабинет</a>` : ''}
             </p>
         `;
     }

@@ -16,13 +16,13 @@
 			<a href="/#contact" class="landing-nav__link">Контакты</a>
 		</nav>
 		<a href="{{ app_url }}/login" class="landing-btn landing-btn--primary landing-header__cta">Забронировать</a>
-		<button type="button" class="landing-burger" aria-label="Меню" data-mobile-menu-open>
+		<button type="button" class="landing-burger" aria-label="Меню" aria-expanded="false" data-mobile-menu-open>
 			<i class="iconoir-menu"></i>
 		</button>
 	</div>
 </header>
 
-<div class="landing-mobile-menu" data-mobile-menu hidden>
+<div class="landing-mobile-menu" data-mobile-menu aria-hidden="true">
 	<div class="landing-mobile-menu__panel">
 		<button type="button" class="landing-mobile-menu__close" aria-label="Закрыть" data-mobile-menu-close>
 			<i class="iconoir-xmark"></i>

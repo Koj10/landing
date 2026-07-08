@@ -2,10 +2,10 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<title>{% block title %}GameSense — компьютерный клуб{% endblock %}</title>
 	<meta name="description" content="{% block description %}Компьютерный клуб GameSense в Магнитогорске: мощные ПК, VIP-зоны, бронь онлайн. ул. Правда, 59. Работаем 24/7.{% endblock %}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}?v=2.2">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}?v=2.4">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
 	{% include 'partials/header.html' %}
 	<main>{% block content %}{% endblock %}</main>
 	{% include 'partials/footer.html' %}
-	<script src="{{ url_for('static', filename='js/script.js') }}?v=2.0" defer></script>
+	<script src="{{ url_for('static', filename='js/script.js') }}?v=2.1" defer></script>
 	{% block scripts %}{% endblock %}
 </body>
 </html>
